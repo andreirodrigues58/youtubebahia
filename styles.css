@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    color: #ff0000;
+    padding: 30px 20px;
+}
+
+.pesquisa-bar {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 25px;
+    padding: 5px;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.pesquisa-bar input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+    background: transparent;
+}
+
+.pesquisa-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+}
+
+.container-detalhes{
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(255, 0, 0);
+    color: #f1f1f1;
+}
+
+.img-canal{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lado-lado{
+            display: flex; /* Define o layout flex */
+            align-items: center; /* Alinha verticalmente ao centro */
+            justify-content: flex-start; /* Alinha os itens à esquerda */
+            width: 100%;
+}
+
+.img-verif {
+    width: 20px; /* Defina o tamanho da imagem */
+    height: 20px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover;
+    margin-bottom: 40px;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.direita {
+    display: flex;
+    align-items: center; 
+    margin-left: 80px;
+    gap: 15px; /* Espaço entre o botão e os ícones */
+}
+
+
+.img-canal {
+    width: 60px; /* Ajuste o tamanho da imagem */
+    height: 60px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover;
+}
+
+.img-verif {
+    width: 20px; /* Ajuste o tamanho da imagem */
+    height: 20px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover;
+}
+
+.nome-canal {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilo do botão */
+.inscrever {
+    background-color: #f1f1f1; /* Cor vermelha */
+    color: blue;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.inscrever:hover {
+    background-color: blue;
+    color: #f1f1f1;
+}
+
+.like-deslike {
+    display: flex;
+    justify-content: space-between; /* Uma imagem vai para a esquerda e outra para a direita */
+    gap: 25px;
+    align-items: center; /* Alinha verticalmente */
+    background-color: #f1f1f1; /* Cor do fundo */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    border-radius: 16px; /* Bordas arredondadas */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+/* Ajusta o tamanho das imagens */
+.like-deslike button {
+    background: none; /* Remove fundo do botão */
+    border: none; /* Remove borda */
+    cursor: pointer;
+}
+
+
+.like {
+    width: 35px; /* Ajusta tamanho */
+    height: 35px;
+}
+
+.compartilhamento {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do contêiner */
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Adiciona um pequeno espaçamento entre imagem e texto */
+    background-color: #f1f1f1; /* Cor do fundo */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    border-radius: 16px; /* Bordas arredondadas */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.compartilhamento button {
+    display: inline-flex; /* Permite centralizar texto e imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background: none; /* Remove fundo do botão */
+    border: none; /* Remove borda */
+    cursor: pointer;
+    padding: 5px 10px; /* Ajusta o espaçamento interno do botão */
+}
+
+.compart {
+    width: 20px; /* Ajuste o tamanho da imagem */
+    height: 20px;
+    margin-right: 5px; /* Adiciona um pequeno espaçamento entre a imagem e o texto */
+}
+
+.conteiner-descr{
+    background-color: blue;
+    padding: 1px;
+    border-radius: 5px;
+    text-align: start;
+    margin-top: 8px;
+}
+
+.text {
+    margin-left: 15px;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #f1f1f1; /* Deixa o texto branco */
+}
+
+.text a {
+    color: #f1f1f1; /* Deixa os links com o texto branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.avatar{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content{
+    flex: 4;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.recommended-video{
+    text-align: start;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.recomend-text{
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+.vid{
+    height: 140px;
+    border-radius: 5px;
+}
+
+.vid-2{
+    border-radius: 5px;
+}
+ 
+
+.comment{
+    display: flex; /* Define o layout flex */
+    text-align: start;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    width: 100%;
+    white-space: nowrap;
+}
+

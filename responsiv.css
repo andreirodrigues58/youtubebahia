@@ -1,0 +1,131 @@
+/* Estilos para telas grandes (Desktop) */
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: space-between; /* Garantir que o conteúdo e a sidebar fiquem lado a lado */
+        margin: 20px;
+    }
+
+    .content {
+        flex: 4;
+        padding: 20px;
+    }
+
+    .sidebar {
+        flex: 1;
+        padding: 20px;
+        background-color: blue;
+        border-radius: 5px;
+    }
+
+    .vid-2 {
+        width: 100%;
+        height: 500px; /* Ajuste para vídeos grandes */
+    }
+
+    .recommended-video iframe {
+        width: 100%;
+        height: 200px; /* Ajuste para o tamanho dos vídeos recomendados */
+    }
+
+    .comment {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .container-detalhes {
+        padding: 20px;
+        background-color: rgb(255, 0, 0);
+        color: #f1f1f1;
+    }
+}
+
+/* Estilos para telas médias (Tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column; /* Muda para coluna para adaptar ao tablet */
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .sidebar {
+        flex: 1;
+        padding: 15px;
+        margin-top: 20px; /* Adiciona margem para separação */
+    }
+
+    .vid-2 {
+        width: 100%;
+        height: 300px; /* Ajuste para vídeos menores em tablets */
+    }
+
+    .recommended-video iframe {
+        width: 100%;
+        height: 150px; /* Ajuste para vídeos menores nos recomendados */
+    }
+}
+
+/* Estilos para telas pequenas (Celulares) */
+@media (max-width: 767px) {
+    .header {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pesquisa-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .sidebar {
+        flex: 1;
+        padding: 10px;
+        margin-top: 20px; /* Adiciona margem para separação */
+    }
+
+    .vid-2 {
+        width: 100%;
+        height: 200px; /* Ajuste para vídeos menores em celular */
+    }
+
+    .recommended-video iframe {
+        width: 100%;
+        height: 120px; /* Ajuste para vídeos menores nos recomendados */
+    }
+
+    .lado-lado {
+        flex-direction: column; /* Muda para coluna para ajustar no celular */
+        text-align: center;
+    }
+
+    .img-canal, .img-verif {
+        width: 40px;
+        height: 40px;
+    }
+
+    .like-deslike {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .comment {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .container-detalhes {
+        padding: 10px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
